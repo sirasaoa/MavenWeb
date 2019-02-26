@@ -21,28 +21,9 @@
             <version>7.0</version>
             <scope>provided</scope>
         </dependency>
-        <dependency>
-             <groupId>org.apache.tomcat.maven</groupId>
-             <artifactId>tomcat7-maven-plugin</artifactId>
-             <version>2.3-SNAPSHOT</version>
-             <type>maven-plugin</type>
-        </dependency>
+        
     </dependencies>
     
-    <pluginRepositories>
-    <pluginRepository>
-      <id>apache.snapshots</id>
-      <name>Apache Snapshots</name>
-      <url>https://repository.apache.org/content/repositories/snapshots</url>
-      <releases>
-        <enabled>false</enabled>
-      </releases>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
-    </pluginRepository>
-  </pluginRepositories>
-
     <build>
         <plugins>
             <plugin>
@@ -90,14 +71,7 @@
                     </execution>
                 </executions>
             </plugin>
-            <plugin>
-        <groupId>org.apache.tomcat.maven</groupId>
-        <artifactId>tomcat7-maven-plugin</artifactId>
-        <version>2.3-SNAPSHOT</version>
-        <configuration>
-          <path>/mavenweb</path>
-        </configuration>
-          </plugin>
+           
         </plugins>
     </build>
 
