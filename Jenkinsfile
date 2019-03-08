@@ -19,6 +19,13 @@ agent any
                 }
             }
             }
+        
+        stage('Deploy To Staging'){
+            steps
+            {
+                build job: 'Deploy_WebApp_Staging'
+            }
+        }
     }
     
 }
