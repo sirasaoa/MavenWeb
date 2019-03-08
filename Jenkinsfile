@@ -8,7 +8,7 @@ agent any
         stage('Build'){
             steps
             {
-                cmd 'mvn clean package'
+                bat 'mvn clean package'
             }
             post
             {
