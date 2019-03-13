@@ -4,7 +4,7 @@
 
     <groupId>com.cybage</groupId>
     <artifactId>mavenweb</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>${build.number}-SNAPSHOT</version>
     <packaging>war</packaging>
 
     <name>mavenweb</name>
